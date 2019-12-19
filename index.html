@@ -643,36 +643,30 @@
 		
 		
 		<!-- CLIENT FEEDBACK -->
-		<div class="client-feedback" align=left>
-		
-			
-			<!-- CLIENT FEEDBACK ITEM -->
+		<div class="client-feedback">
+			<font size="28">
 
-			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
-			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
-			<img class="img-responsive logo" src="img/clients/client-1.png" alt="image"></div>
+			<!-- weixin -->
+			<span class="tipsSpan">
+			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+			<span class="tips"><img src="img/clients/client-1.png" alt="image"></span>
+			</span>&emsp;
+			<!-- weixin -->
+			<span class="tipsSpan">
+			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+			<span class="tips"><img src="img/clients/client-2.png" alt="image"></span>
+			</span>&emsp;
+			<!-- weixin -->
+			<span class="tipsSpan">
+			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+			<span class="tips"><img src="img/clients/client-3.png" alt="image"></span>
+			</span>
 
-			<!-- /CLIENT FEEDBACK ITEM -->
-			
-			
-			<!-- CLIENT FEEDBACK ITEM -->
 
-			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
-			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
-			<img class="img-responsive logo" src="img/clients/client-2.png" alt="image"></div>
+			<br><br><br><br>
+			</font>
 
-			<!-- /CLIENT FEEDBACK ITEM -->
-			
-			
-			<!-- CLIENT FEEDBACK ITEM -->
 
-			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
-			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
-			<img class="img-responsive logo" src="img/clients/client-3.png" alt="image"></div>
-
-			<!-- /CLIENT FEEDBACK ITEM -->
-		
-		
 		</div>
 		<!-- /CLIENT FEEDBACK -->
 
@@ -859,23 +853,38 @@
 <!-- JAVASCRIPTS -->
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script language="javascript" src="js/jquery.min.js"></script>
 
-<script type="text/javascript"> 
- //显示悬浮层 
- function showInform(){ 
- document.getElementById("inform").style.display='block'; 
-  // document.getElementById("inform").css("display","block"); 
- } 
- //隐藏悬浮层 
- function hiddenInform(){ 
- 
-  document.getElementById('inform').style.display='none'; 
-   
- } 
-  
+<script type="text/javascript">
+$(function(){ 
+	var zIndex = 1;
+	$(".tipsSpan").mouseover(function(){
+        if($(this).find("span").is(":visible")){
+            $(this).find("span").css({"visibility":"visible","zIndex":zIndex++});
+        }
+    });
+    $(".tipsSpan").mouseout(function(){
+        $(this).find("span").css({"visibility":"hidden"});
+    });
+});   
 </script>
+<style type="text/css">
+.tipsSpan{
+	position: relative;
+}
+.tips{
+	visibility: hidden;
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid #000;
+	display: inline;
+	min-width: 130px;
+	min-height: 24px;
+	left: 20px;
+	top:18px;
+}
+</style>
 
 </body> 
-
 
 </html>
