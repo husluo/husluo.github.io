@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- STYLESHEETS -->
 <link rel="stylesheet" type="text/css" href="css/plugins.css">
@@ -68,7 +68,7 @@
 			<ul class="navigation-items nav navbar-nav navbar-right">
 
 
-				<li class="current"><a href="#intro">主页</a></li>
+				<li class="current"><a href="#intro"><i class="fa fa-home fa-fw" aria-hidden="true"></i>主页</a></li>
 				<li><a href="#about">关于</a></li>
 				<li><a href="#service">服务</a></li>
 				<li><a href="#work">工作</a></li>
@@ -137,7 +137,7 @@
 	<div class="container-fluid text-center">
 
 
-		<h3 class="headline scroll-animated-from-bottom">网站建设中</h3>
+		<h3 class="headline scroll-animated-from-bottom">一个专注HUSLUO的游戏制作开发团队</h3>
 
 		<p class="subline scroll-animated-from-bottom">Ecchi Yuri Sexy Love Your Oppai</p>
 
@@ -639,88 +639,37 @@
 	<div class="container-fluid text-center">
 
 
-		<h3 class="headline scroll-animated-from-bottom">评价</h3>
+		<h3 class="headline scroll-animated-from-bottom">赞助</h3>
 		
 		
 		<!-- CLIENT FEEDBACK -->
-		<div class="client-feedback">
+		<div class="client-feedback" align=left>
 		
 			
 			<!-- CLIENT FEEDBACK ITEM -->
-			<div class="client-feedback-item row">
 
+			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
+			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
+			<img class="img-responsive logo" src="img/clients/client-1.png" alt="image"></div>
 
-				<!-- COLUMN -->
-				<div class="col-sm-3 text-left scroll-animated-from-bottom">
-
-					<img class="img-responsive logo" src="img/clients/client-1.png" alt="image">
-
-				</div>
-				<!-- /COLUMN -->
-
-
-				<!-- COLUMN -->
-				<div class="col-sm-9 text-left scroll-animated-from-bottom">
-
-					<p>nnnn</p>
-
-				</div>
-				<!-- /COLUMN -->
-			
-			
-			</div>
 			<!-- /CLIENT FEEDBACK ITEM -->
 			
 			
 			<!-- CLIENT FEEDBACK ITEM -->
-			<div class="client-feedback-item row">
 
+			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
+			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
+			<img class="img-responsive logo" src="img/clients/client-2.png" alt="image"></div>
 
-				<!-- COLUMN -->
-				<div class="col-sm-3 text-left scroll-animated-from-bottom">
-
-					<img class="img-responsive logo" src="img/clients/client-2.png" alt="image">
-
-				</div>
-				<!-- /COLUMN -->
-
-
-				<!-- COLUMN -->
-				<div class="col-sm-9 text-left scroll-animated-from-bottom">
-
-					<p>nnnn</p>
-
-				</div>
-				<!-- /COLUMN -->
-			
-			
-			</div>
 			<!-- /CLIENT FEEDBACK ITEM -->
 			
 			
 			<!-- CLIENT FEEDBACK ITEM -->
-			<div class="client-feedback-item row">
 
+			<a id="btn" onMouseOver="javascript:showInform()" onMouseOut="javascript:hiddenInform()"> <i class="fa fa-weixin" aria-hidden="true"></i></a> 
+			<div id="inform" onMouseOver="javascript:showInform();" onMouseOut="javascript:hiddenInform()"> 
+			<img class="img-responsive logo" src="img/clients/client-3.png" alt="image"></div>
 
-				<!-- COLUMN -->
-				<div class="col-sm-3 text-left scroll-animated-from-bottom">
-
-					<img class="img-responsive logo" src="img/clients/client-3.png" alt="image">
-
-				</div>
-				<!-- /COLUMN -->
-
-
-				<!-- COLUMN -->
-				<div class="col-sm-9 text-left scroll-animated-from-bottom">
-
-					<p>nnnn</p>
-
-				</div>
-				<!-- /COLUMN -->
-			
-			
-			</div>
 			<!-- /CLIENT FEEDBACK ITEM -->
 		
 		
@@ -780,7 +729,7 @@
 				<!-- CONTACT TYPE -->
 				<div class="contact-type">
 				   
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<i class="fa fa-phone" aria-hidden="true"></i>
 					<h6>电话</h6>
 					
 				</div>
@@ -801,7 +750,7 @@
 				<!-- CONTACT TYPE -->
 				<div class="contact-type">
 				   
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<h6>地区</h6>
 					
 				</div>
@@ -857,13 +806,12 @@
 				<ul class="social-icons">
 
 
-
-
-					<a href="1.html">
-					<span class="fa-stack fa-lg">
-					<i class="fa fa-square fa-stack-2x"></i>
-					<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-					</span></a>
+					<li><a href="passwd">
+					<i class="fa fa-unlock" aria-hidden="true"></i>
+					</span></a></li>
+					<li><a href="1.html">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					</span></a></li>
 					
 					
 				</ul>
@@ -910,7 +858,20 @@
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
-
+<script type="text/javascript"> 
+ //显示悬浮层 
+ function showInform(){ 
+ document.getElementById("inform").style.display='block'; 
+  // document.getElementById("inform").css("display","block"); 
+ } 
+ //隐藏悬浮层 
+ function hiddenInform(){ 
+ 
+  document.getElementById('inform').style.display='none'; 
+   
+ } 
+  
+</script>
 
 </body> 
 
