@@ -145,7 +145,7 @@
 		<!-- COLUMN -->
 		<div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
 
-			<img class="img-responsive" src="img/about/about-1.jpg" alt="image">
+			<img class="lazy" width="269" height="176" src="img/about/about-1.jpg" alt="image">
 			<p>Ecchi </p>
 
 		</div>
@@ -155,7 +155,7 @@
 		<!-- COLUMN -->
 		<div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
 
-			<img class="img-responsive" src="img/about/about-2.jpg" alt="image">
+			<img class="lazy" width="269" height="176" src="img/about/about-2.jpg" alt="image">
 			<p>Yuri </p>
 
 		</div>
@@ -165,7 +165,7 @@
 		<!-- COLUMN -->
 		<div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
 
-			<img class="img-responsive" src="img/about/about-3.jpg" alt="image">
+			<img class="lazy" width="269" height="176" src="img/about/about-3.jpg" alt="image">
 			<p>Sexy </p>
 
 		</div>
@@ -331,7 +331,7 @@
 					<div id="item-1-lightbox" class="work-lightbox">
 
 
-						<img class="img-responsive" src="img/work/work-1.jpg" alt="image">
+						<img class="lazy" width="1000" height="667" src="img/work/work-1.jpg" alt="image">
 						
 						
 						<!-- DESCRIPTION -->
@@ -395,7 +395,7 @@
 					<div id="item-2-lightbox" class="work-lightbox">
 
 
-						<img class="img-responsive" src="img/work/work-2.jpg" alt="image">
+						<img class="lazy" width="1000" height="667" src="img/work/work-2.jpg" alt="image">
 						
 						
 						<!-- DESCRIPTION -->
@@ -459,7 +459,7 @@
 					<div id="item-3-lightbox" class="work-lightbox">
 
 
-						<img class="img-responsive" src="img/work/work-3.jpg" alt="image">
+						<img class="lazy" width="1000" height="667" src="img/work/work-3.jpg" alt="image">
 						
 						
 						<!-- DESCRIPTION -->
@@ -523,7 +523,7 @@
 					<div id="item-4-lightbox" class="work-lightbox">
 
 
-						<img class="img-responsive" src="img/work/work-4.jpg" alt="image">
+						<img class="lazy" width="1000" height="667" src="img/work/work-4.jpg" alt="image">
 						
 						
 						<!-- DESCRIPTION -->
@@ -587,7 +587,7 @@
 					<div id="item-5-lightbox" class="work-lightbox">
 
 
-						<img class="img-responsive" src="img/work/work-5.jpg" alt="image">
+						<img class="lazy" width="1000" height="667" src="img/work/work-5.jpg" alt="image">
 						
 						
 						<!-- DESCRIPTION -->
@@ -643,24 +643,24 @@
 		
 		
 		<!-- CLIENT FEEDBACK -->
-		<div class="client-feedback">
+		<div class="client-feedback" align="left">
 			<font size="28">
 
 			<!-- weixin -->
 			<span class="tipsSpan">
 			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
-			<span class="tips"><img src="img/clients/client-1.png" alt="image"></span>
-			</span>&emsp;
+			<span class="tips"><img class="lazy" width="300" height="300" src="img/clients/client-1.png" alt="image"></span>
+			</span><br><br><br>
 			<!-- weixin -->
 			<span class="tipsSpan">
 			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
-			<span class="tips"><img src="img/clients/client-2.png" alt="image"></span>
-			</span>&emsp;
+			<span class="tips"><img class="lazy" width="300" height="300" src="img/clients/client-2.png" alt="image"></span>
+			</span><br><br><br>
 			<!-- weixin -->
 			<span class="tipsSpan">
 			<a href="javascript:void(0)"><i class="fa fa-weixin" aria-hidden="true"></i></a>
-			<span class="tips"><img src="img/clients/client-3.png" alt="image"></span>
-			</span>
+			<span class="tips"><img class="lazy" width="300" height="300" src="img/clients/client-3.png" alt="image"></span>
+			</span><br><br><br>
 
 
 			<br><br><br><br>
@@ -853,9 +853,14 @@
 <!-- JAVASCRIPTS -->
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script language="javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
 
 <script type="text/javascript">
+$(function() {
+    $("img.lazy").lazyload();
+});
+
 $(function(){ 
 	var zIndex = 1;
 	$(".tipsSpan").mouseover(function(){
@@ -868,6 +873,14 @@ $(function(){
     });
 });   
 </script>
+<script type="text/javascript">
+            if(window.console){
+                var cons = console;
+                if(cons){
+                    cons.info('%c⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄\trero\r\n⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄\trero rero\r\n⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄\t\trero\trero\r\n⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰\trero rero\r\n⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤rero\r\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗\t\trero rero\r\n⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄\trero\r\n⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄\t\trero\r\n⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄ rero\r\n⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄rero\r\n⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄\t\trero\r\n⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄ rero\t\trero\r\n⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴\trero\r\n⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠','color: blue');
+                }
+            }
+</script>
 <style type="text/css">
 .tipsSpan{
 	position: relative;
@@ -878,8 +891,8 @@ $(function(){
 	background: #FFFFFF;
 	border: 1px solid #000;
 	display: inline;
-	min-width: 130px;
-	min-height: 24px;
+	min-width: 50px;
+	min-height: 50px;
 	left: 20px;
 	top:18px;
 }
