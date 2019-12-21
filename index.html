@@ -36,10 +36,10 @@
 
 <!--
 <div class="preloader">
-   
+
 	<div class="spinner">网页加载保护</div>
 	
-</div>
+	</div>
 -->
 
 <!-- /PRELOADER -->
@@ -71,14 +71,12 @@
 			<!-- MENU ITEMS LIST -->
 			<ul class="navigation-items nav navbar-nav navbar-right">
 
-
 				<li class="current"><a href="#intro">主页</a></li>
 				<li><a href="#about">关于</a></li>
 				<li><a href="#detail">内容</a></li>
 				<li><a href="#grade">档次</a></li>
 				<li><a href="#sponsor">赞助</a></li>
 				<li><a href="#contact">联系</a></li>
-
 
 			</ul>
 			<!-- /MENU ITEMS LIST -->
@@ -214,7 +212,7 @@
 					<!-- CONTAINER MID -->
 					<div class="container-mid">
 
-						<h5>第一档</h5>
+						<h5>Steam</h5>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
 					</div>
@@ -238,15 +236,11 @@
 						
 						<!-- DESCRIPTION -->
 						<div class="description">
-
 					   
-							<h3>第一</h3>
+							<h3>steam</h3>
 							<p class="subline">steam key</p>
 
 							<p>steam key</p>
-
-							<p>发售后发放</p>
-						
 						
 						</div>
 						<!-- /DESCRIPTION -->
@@ -278,7 +272,7 @@
 					<!-- CONTAINER MID -->
 					<div class="container-mid">
 
-						<h5>第二档</h5>
+						<h5>DLC</h5>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
 					</div>
@@ -303,14 +297,10 @@
 						<!-- DESCRIPTION -->
 						<div class="description">
 						
-
-							<h3>第二档</h3>
+							<h3>DLC</h3>
 							<p class="subline">steam key + dlc</p>
 
 							<p>steam key + dlc</p>
-
-							<p>发售后发放</p>
-						
 						
 						</div>
 						<!-- /DESCRIPTION -->
@@ -342,7 +332,7 @@
 					<!-- CONTAINER MID -->
 					<div class="container-mid">
 
-						<h5>第三档</h5>
+						<h5>道具</h5>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
 					</div>
@@ -366,15 +356,11 @@
 						
 						<!-- DESCRIPTION -->
 						<div class="description">
-						
 
-							<h3>第三档</h3>
+							<h3>道具</h3>
 							<p class="subline">特制道具</p>
 
-							<p>前面内容加特制道具</p>
-
-							<p>发售前预定有效</p>
-						
+							<p></p>
 						
 						</div>
 						<!-- /DESCRIPTION -->
@@ -406,7 +392,7 @@
 					<!-- CONTAINER MID -->
 					<div class="container-mid">
 
-						<h5>第四档</h5>
+						<h5>列表</h5>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
 					</div>
@@ -431,14 +417,10 @@
 						<!-- DESCRIPTION -->
 						<div class="description">
 						
-
-							<h3>第四档</h3>
+							<h3>列表</h3>
 							<p class="subline">感谢列表</p>
 
-							<p>前面内容加感谢列表</p>
-
-							<p>发售前预定有效</p>
-						
+							<p>感谢列表</p>
 						
 						</div>
 						<!-- /DESCRIPTION -->
@@ -470,7 +452,7 @@
 					<!-- CONTAINER MID -->
 					<div class="container-mid">
 
-						<h5>第五档</h5>
+						<h5>NPC</h5>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
 					</div>
@@ -494,15 +476,11 @@
 						
 						<!-- DESCRIPTION -->
 						<div class="description">
-						
 
-							<h3>第五档</h3>
+							<h3>NPC</h3>
 							<p class="subline">专属NPC</p>
 
 							<p>前面内容加专属NPC</p>
-
-							<p>发售前预定有效</p>
-						
 						
 						</div>
 						<!-- /DESCRIPTION -->
@@ -657,11 +635,13 @@
 			<a href="javascript:void(0)"><i class="fa fa-wechat" aria-hidden="true"></i></a>
 			<span class="tips"><img class="lazy" width="300" height="300" src="img/sponsor/wechat.jpg" alt="image"></span>
 			</span>Wechat<br><br>
+
 			<!-- alipay -->
 			<span class="tipsSpan">
 			<a href="javascript:void(0)"><i class="fa fa-adn" aria-hidden="true"></i></a>
 			<span class="tips"><img class="lazy" width="300" height="325" src="img/sponsor/alipay.jpg" alt="image"></span>
 			</span>Alipay<br><br>
+
 			<!-- paypal -->
 			<span class="tipsSpan">
 			<a href="javascript:void(0)"><i class="fa fa-paypal" aria-hidden="true"></i></a>
@@ -810,7 +790,6 @@
 				<!-- SOCIAL ICONS -->
 				<ul class="social-icons">
 
-
 					<li><a href="/passwd">
 					<i class="fa fa-unlock" aria-hidden="true"></i>
 					</span></a></li>
@@ -865,25 +844,30 @@
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<!-- LAZY -->
 <script type="text/javascript" src="js/jquery.lazyload.js"></script>
-
 <script type="text/javascript">
-$(function() {
-    $("img.lazy").lazyload();
-});
+	$(function() {
+		$("img.lazy").lazyload();
+	});
 
-$(function(){ 
-	var zIndex = 1;
-	$(".tipsSpan").mouseover(function(){
-        if($(this).find("span").is(":visible")){
-            $(this).find("span").css({"visibility":"visible","zIndex":zIndex++});
-        }
-    });
-    $(".tipsSpan").mouseout(function(){
-        $(this).find("span").css({"visibility":"hidden"});
-    });
-});   
+	$(function(){ 
+		var zIndex = 1;
+		$(".tipsSpan").mouseover(function(){
+		 if($(this).find("span").is(":visible")){
+			    $(this).find("span").css({"visibility":"visible","zIndex":zIndex++});
+		 }
+		});
+		$(".tipsSpan").mouseout(function(){
+		    $(this).find("span").css({"visibility":"hidden"});
+		});
+	});   
 </script>
+<!-- /LAZY -->
+
+<!-- CON.INFO -->
 <script type="text/javascript">
             if(window.console){
                 var cons = console;
@@ -892,22 +876,26 @@ $(function(){
                 }
             }
 </script>
+<!-- /CON.INFO -->
+
+<!-- TEXT.HIDDEN -->
 <style type="text/css">
-.tipsSpan{
-	position: relative;
-}
-.tips{
-	visibility: hidden;
-	position: absolute;
-	background: #FFFFFF;
-	border: 1px solid #000;
-	display: inline;
-	min-width: 50px;
-	min-height: 50px;
-	left: 20px;
-	top:18px;
-}
+	.tipsSpan{
+		position: relative;
+	}
+	.tips{
+		visibility: hidden;
+		position: absolute;
+		background: #FFFFFF;
+		border: 1px solid #000;
+		display: inline;
+		min-width: 50px;
+		min-height: 50px;
+		left: 20px;
+		top:18px;
+	}
 </style>
+<!-- /TEXT.HIDDEN -->
 
 </body> 
 
