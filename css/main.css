@@ -735,13 +735,14 @@ section .headline
     opacity: 1;
 }
 
+/**未实现**/
 #intro .animation-container.animation-fade-up
 {
     -webkit-transform: translateY(10vh);
         -ms-transform: translateY(10vh);
             transform: translateY(10vh);
 
-    opacity: 0;
+    opacity: 1;
 }
 
 #intro .animation-container.animation-fade-up.run-animation
@@ -753,13 +754,14 @@ section .headline
     opacity: 1;
 }
 
+/**未实现**/
 #intro .animation-container.animation-fade-down
 {
     -webkit-transform: translateY(-10vh);
         -ms-transform: translateY(-10vh);
             transform: translateY(-10vh);
 
-    opacity: 0;
+    opacity: 1;
 }
 
 #intro .animation-container.animation-fade-down.run-animation
